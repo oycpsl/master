@@ -1,0 +1,30 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C++调试",
+			"command": "C:\\software\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${workspaceFolder}/main.cpp",
+                "${workspaceFolder}/Multiply.cpp",
+                "${workspaceFolder}/Add.cpp",
+				"-o",
+				"${workspaceFolder}/main.exe"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+                "kind": "build",
+                "isDefault": true
+            },
+			"detail": "编译器: C:\\software\\mingw64\\bin\\g++.exe"
+		}
+	]
+}
